@@ -1,7 +1,8 @@
-<template>
-  <div id="app">
+<template> 
+
+  <div id="app">    
     <!--title-->
-    <h1 class="site-title">{{title}}</h1>
+    <h1 class="site-title">{{ title }}</h1>
     <span class="site-description">{{ currentDate }}</span>  
 
     <!--entry list-->
