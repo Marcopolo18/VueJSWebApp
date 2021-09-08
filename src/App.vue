@@ -8,9 +8,9 @@
     <!--entry list-->
     <ul class="entry-list">
       <li 
-      v-for="entry in filteredEntries"
-      :key="entry.id"
-      class="entry-item"
+        v-for="entry in filteredEntries"
+        :key="entry.id"
+        class="entry-item"
       >
         <span class="entry-daytime">{{ entry[0] }}  Uhr - {{ entry[1].replaceAll("/" , ".") }}</span>
         <h3 class="entry-title">{{ entry[2] }}</h3>
@@ -37,23 +37,23 @@ export default {
     return {
       title: "Welcome to Opportunity",
       currentDate:"", 
-      gsheet_url: "https://sheets.googleapis.com/v4/spreadsheets/1tgEcFrhzQPhFV6sA4J186BNwik6uc3o_-vSHfjyn_I4/values:batchGet?ranges=A1%3AE100&valueRenderOption=FORMATTED_VALUE&key=AizaSyAZs-eJ0xMQutLDui-Xfhj_CSSjHraeCP0",
+      gsheet_url: "https://sheets.googleapis.com/v4/spreadsheets/1tgEcFrhzQPhFV6sA4J186BNwik6uc3o_-vSHfjyn_I4/values:batchGet?ranges=A1%3AE100&valueRenderOption=FORMATTED_VALUE&key=AIzaSyAZs-eJ0xMQutLDui-Xfhj_CSSjHraeCP0",
       entries: [],
     };
   },
 
   computed: { /*computed is like data property,   with a method combined, executed automatically, 
   instead of being called like a function*/
-  filteredEntries() {
-    return [...this.entries].slice(1); //remove first item of array              
-  }    
-  
+    filteredEntries() {
+      return [...this.entries].slice(1); //remove first item of array              
+    }    
   },
 
   methods: {
     getData() {
       axios.get(this.gsheet_url).then((response) => {
-        this.entries = response.data.valueRanges[0].values;                
+        this.entries = response.data.valueRanges[0].values;  
+        console.log(response.data.valueRanges[0].values)
       });     
     },
 
