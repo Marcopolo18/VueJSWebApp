@@ -36,7 +36,7 @@ export default {
     return {
       title: "Welcome to Opportunity",
       currentDate:"", 
-      gsheet_url: "https://docs.google.com/spreadsheets/d/AizaSyAZs-eJ0xMQutLDui-Xfhj_CSSjHraeCP0/edit#gid=0",
+      gsheet_url: "https://sheets.googleapis.com/v4/spreadsheets/1tgEcFrhzQPhFV6sA4J186BNwik6uc3o_-vSHfjyn_I4/values:batchGet?ranges=A1%3AE100&valueRenderOption=FORMATTED_VALUE&key=AizaSyAZs-eJ0xMQutLDui-Xfhj_CSSjHraeCP0",
       entries: [],
     };
   },
