@@ -21,8 +21,8 @@
     <!--footer-->
     <footer class="footer">
       <img src="./assets/STZH_SEB_Logo.png" alt="Stadt Zuerich Soziale Betriebe und Einrichtungen Logo">
-      <img src="./assets/Opportunity.png" alt="Opportunity Logo">
       <img src="./assets/SAG_Logo_De.png" alt="Stiftung Arbeitsgestaltung Logo">
+      <img src="./assets/Opportunity.png" alt="Opportunity Logo">      
     </footer>
 
   </div>
@@ -89,34 +89,36 @@ body {
   font-family: "Inter", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 60px;
+  margin: 3vw;
   color: #323d4a;
 }
 
 .site-title {
-  font-size: 62px;
+  font-size: 7vw;
   font-weight: 900;
-  margin: 80px 0 20px 0;
+  margin: 1vw 0 .5vw 0;
+  /*padding: 2.5vw;*/
 }
 
 .site-description {
   font-weight: 500;
-  font-size: 62px;
-  color: #9aa7b1;
-  margin: 0;
+  font-size: 6vw;
+  color: #9aa7b1;  
+  padding: 1vw;  
 }
 
 .entry-list {
-  padding-left: 0;
+  padding-left: 0; 
+  margin-top: 5vw; 
 }
 
 .entry-item {
-  padding: 35px 40px;
-  margin: 40px 0;
-  font-size: 28px;
+  padding: 2vw;
+  margin: 2.5vw 0;
+  font-size: 3vw;
   line-height: 1.3;
   list-style: none;
-  background: #0f05a0;
+  background: #0f05a0; 
 }
 
 .entry-daytime {
@@ -138,18 +140,20 @@ body {
 
 .footer {
   display: flex;  
+  flex-wrap: wrap; 
   justify-content: space-between;
-  padding: 40px;
+  padding: 2.5vw;
   box-sizing: border-box;
   background: #ffff;
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;   
+  width: 100%;
+  height: 10vw;   
 }
 
 .footer img {
-  height: 50px;
+  height: 5.5vw;
 }
 
 </style>
