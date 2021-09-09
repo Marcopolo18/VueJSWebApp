@@ -96,8 +96,7 @@ body {
 .site-title {
   font-size: 7vw;
   font-weight: 900;
-  margin: 1vw 0 .5vw 0;
-  /*padding: 2.5vw;*/
+  margin: 1vw 0 .5vw 0;  
 }
 
 .site-description {
