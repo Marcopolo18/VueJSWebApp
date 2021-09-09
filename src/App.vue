@@ -16,6 +16,8 @@
         <h3 class="entry-title">{{ entry[2] }}</h3>
         <span class="entry-description">{{ entry[3] }}</span>
       </li>
+
+      <p class="noAction" v-if="filteredEntries.length === 0">Have a nice day!</p>     
     </ul>
 
     <!--footer-->
@@ -104,6 +106,16 @@ body {
   font-size: 6vw;
   color: #9aa7b1;  
   padding: 1vw;  
+}
+
+.noAction {
+  padding: 2vw;
+  margin: 2.5vw 0;
+  font-size: 6vw;
+  line-height: 1.3;
+  list-style: none;
+  background: #0f05a0;
+  color: #ffbfab;
 }
 
 .entry-list {
